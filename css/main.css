@@ -1,23 +1,27 @@
-*,*::after,*::before{
+*, ::after, ::before{
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
 }
 
 html {
       width: 100vw;
       height: 100vh;
-      box-sizing: border-box;
 }
 
 
 ul{
       display: flex;
       justify-content: space-around;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      background-color: aqua;
+      border: 1px solid black;
+      list-style: none;
 }
 
 ul>li {
       flex-flow: column nowrap;
-      list-style: none;
 
 }
 
@@ -30,8 +34,21 @@ li>a{
       justify-content: center;
 }
 
-#titulo>h1{
-      text-align: center;
+#registro{
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: row nowrap;
+}
+
+#registro>a{
+      padding: 0 5px 5px 0;
+      text-decoration: none;
+}
+
+#buscador{
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: row nowrap;
 }
 
 
